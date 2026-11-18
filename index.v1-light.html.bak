@@ -1,0 +1,478 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Brixen × IDEC | Services and Projects</title>
+<meta name="description" content="Estimating, engineering and BIM for U.S. construction firms. Brixen and IDEC: 500+ contractors served, 150+ projects delivered, from Texas to NEOM.">
+<meta property="og:title" content="Brixen × IDEC | Services and Projects">
+<meta property="og:description" content="One team for your estimates, engineering and BIM. 150+ projects delivered, from Texas to NEOM.">
+<meta property="og:image" content="img/projects/kafd-hq.jpg">
+<link rel="icon" href="img/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap">
+<style>
+/* Brixen × IDEC services catalogue. Static, one file: upload this folder to Vercel as is. Edit BOOKING and PHONE below if they change. */
+:root{--ink:#152238;--ink2:#5b6878;--line:#dfe3ea;--band:#f5f7fb;--blue:#1d5bd6;--blue2:#1748ad;--soft:#eaf1fd;--gold:#c99a2e}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:#fff;color:var(--ink);font:400 16px/1.6 "Poppins",system-ui,"Segoe UI",Arial,sans-serif;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:var(--blue)}
+.wrap{max-width:1180px;margin:0 auto;padding:0 20px}
+.btn{display:inline-flex;align-items:center;gap:8px;font:600 15px/1 "Poppins",sans-serif;text-decoration:none;border-radius:999px;padding:14px 24px;border:2px solid var(--blue);background:var(--blue);color:#fff;cursor:pointer;transition:background .15s}
+.btn:hover{background:var(--blue2);border-color:var(--blue2)}
+.btn.ghost{background:transparent;color:var(--blue)}
+.btn.ghost:hover{background:var(--soft)}
+.btn.light{background:#fff;color:var(--ink);border-color:#fff}
+.kick{display:inline-block;font-size:12.5px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--blue);margin:0 0 10px}
+h1,h2,h3{margin:0;letter-spacing:-.02em;text-wrap:balance}
+h2{font-size:clamp(26px,3.4vw,38px);line-height:1.15;font-weight:600}
+h3{font-size:18px;line-height:1.3;font-weight:600}
+section{padding:72px 0}
+.sub{color:var(--ink2);max-width:62ch;margin:12px 0 0}
+.center{text-align:center}.center .sub{margin-left:auto;margin-right:auto}
+
+/* header */
+header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;height:68px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--ink)}
+.brand img{height:38px;width:auto}
+.brand span{font-size:13px;font-weight:600;border:1.5px solid var(--ink);border-radius:999px;padding:3px 10px;white-space:nowrap}
+nav{display:flex;gap:22px;align-items:center}
+nav a.l{color:var(--ink);text-decoration:none;font-size:14.5px;font-weight:500}
+nav a.l:hover{color:var(--blue)}
+header .btn{padding:10px 18px;font-size:14px}
+@media (max-width:900px){nav a.l{display:none}}
+@media (max-width:480px){.brand span{display:none}header .btn{padding:9px 14px;font-size:13px}}
+
+/* hero */
+.hero{padding:56px 0 40px;background:linear-gradient(180deg,#f3f6fc 0%,#fff 100%)}
+.hero .wrap{display:grid;grid-template-columns:1.05fr 1fr;gap:44px;align-items:center}
+.hero h1{font-size:clamp(32px,4.6vw,54px);line-height:1.08;font-weight:600}
+.hero h1 em{font-style:normal;color:var(--blue)}
+.hero p.lead{font-size:18px;color:var(--ink2);margin:18px 0 26px;max-width:54ch}
+.hero .ctas{display:flex;gap:12px;flex-wrap:wrap}
+.hero .note{font-size:13.5px;color:var(--ink2);margin-top:14px}
+.collage{display:grid;grid-template-columns:1.2fr 1fr;grid-template-rows:1fr 1fr;gap:10px;aspect-ratio:1/1}
+.collage figure{margin:0;border-radius:16px;overflow:hidden;position:relative;background:#e9edf3}
+.collage figure:first-child{grid-row:1/3}
+.collage img{width:100%;height:100%;object-fit:cover}
+.collage figcaption{position:absolute;left:10px;bottom:10px;background:rgba(21,34,56,.86);color:#fff;font-size:12px;font-weight:500;padding:4px 10px;border-radius:999px}
+@media (max-width:900px){.hero .wrap{grid-template-columns:1fr}.collage{aspect-ratio:4/3}}
+
+/* proof band */
+.proof{background:var(--ink);color:#fff;padding:34px 0}
+.stats{display:grid;grid-template-columns:repeat(6,1fr);gap:18px}
+.stat b{display:block;font-size:clamp(24px,2.6vw,32px);font-weight:600;line-height:1.1}
+.stat span{font-size:13px;color:#b9c4d6;line-height:1.35;display:block;margin-top:6px}
+.giga{margin-top:26px;padding-top:20px;border-top:1px solid rgba(255,255,255,.14);display:flex;flex-wrap:wrap;gap:10px 26px;align-items:center;font-size:14px;color:#dfe6f2}
+.giga strong{color:#fff;font-weight:600;margin-right:4px}
+@media (max-width:900px){.stats{grid-template-columns:repeat(3,1fr)}}
+@media (max-width:520px){.stats{grid-template-columns:repeat(2,1fr)}}
+
+/* outcomes */
+.outcomes{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:34px}
+.oc{border:1px solid var(--line);border-radius:18px;padding:22px}
+.oc .ic{width:42px;height:42px;border-radius:12px;background:var(--soft);display:grid;place-items:center;margin-bottom:14px}
+.oc .ic svg{width:22px;height:22px;stroke:var(--blue);fill:none;stroke-width:2}
+.oc p{margin:8px 0 0;color:var(--ink2);font-size:14.5px}
+@media (max-width:900px){.outcomes{grid-template-columns:1fr 1fr}}
+@media (max-width:520px){.outcomes{grid-template-columns:1fr}}
+
+/* services */
+.services{background:var(--band)}
+.desks{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:34px}
+.desk{background:#fff;border:1px solid var(--line);border-radius:20px;padding:28px}
+.desk .tag{display:inline-block;font-size:12px;font-weight:600;color:var(--blue);background:var(--soft);border-radius:999px;padding:4px 12px;margin-bottom:12px}
+.desk h3{font-size:22px}
+.desk>p{color:var(--ink2);margin:8px 0 16px;font-size:15px}
+.svc{display:grid;gap:12px}
+.svc div{border-top:1px solid var(--line);padding-top:12px}
+.svc b{display:block;font-size:15px;font-weight:600}
+.svc span{display:block;font-size:14px;color:var(--ink2)}
+.desk .gets{margin-top:18px;background:var(--band);border-radius:14px;padding:14px 16px;font-size:14px}
+.desk .gets b{display:block;margin-bottom:4px}
+.who{margin-top:28px;display:flex;flex-wrap:wrap;gap:8px;justify-content:center}
+.who span{background:#fff;border:1px solid var(--line);border-radius:999px;padding:7px 14px;font-size:14px;font-weight:500}
+@media (max-width:900px){.desks{grid-template-columns:1fr}}
+
+/* process */
+.steps{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;margin-top:34px;counter-reset:s}
+.step{position:relative;padding:20px 18px;border:1px solid var(--line);border-radius:18px;counter-increment:s}
+.step:before{content:counter(s);display:grid;place-items:center;width:32px;height:32px;border-radius:50%;background:var(--blue);color:#fff;font-weight:600;font-size:14px;margin-bottom:12px}
+.step p{margin:6px 0 0;font-size:14px;color:var(--ink2)}
+@media (max-width:900px){.steps{grid-template-columns:1fr 1fr}}
+@media (max-width:520px){.steps{grid-template-columns:1fr}}
+
+/* videos */
+.vids{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:30px}
+.vid{border-radius:18px;overflow:hidden;background:#0d1626;position:relative}
+.vid video{width:100%;display:block;aspect-ratio:16/9;background:#0d1626}
+.vid .cap{padding:14px 18px;color:#fff;font-size:15px;font-weight:500;background:var(--ink)}
+.vid .cap span{display:block;color:#b9c4d6;font-size:13px;font-weight:400}
+@media (max-width:800px){.vids{grid-template-columns:1fr}}
+
+/* work */
+.work{background:var(--band)}
+.filters{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-top:26px}
+.filters button{font:500 14px/1 "Poppins",sans-serif;border:1.5px solid var(--line);background:#fff;color:var(--ink);border-radius:999px;padding:10px 16px;cursor:pointer}
+.filters button[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:#fff}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:26px}
+.card{background:#fff;border:1px solid var(--line);border-radius:18px;overflow:hidden;display:flex;flex-direction:column;cursor:zoom-in;transition:transform .15s,box-shadow .15s;text-align:left;padding:0;font:inherit;color:inherit}
+.card:hover{transform:translateY(-3px);box-shadow:0 14px 34px -18px rgba(21,34,56,.45)}
+.card .ph{aspect-ratio:4/3;overflow:hidden;background:#e9edf3;position:relative}
+.card .ph img{width:100%;height:100%;object-fit:cover}
+.card .flag{position:absolute;top:10px;left:10px;background:var(--blue);color:#fff;font-size:11.5px;font-weight:600;padding:4px 10px;border-radius:999px}
+.card .bd{padding:16px 18px 18px;display:flex;flex-direction:column;gap:6px;flex:1}
+.card .loc{font-size:13px;color:var(--ink2)}
+.card .sc{font-size:14px;color:var(--ink2);margin:2px 0 0}
+.card .chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:auto;padding-top:8px}
+.card .chips span{font-size:11.5px;font-weight:500;background:var(--soft);color:var(--blue2);border-radius:999px;padding:3px 9px}
+.card[hidden]{display:none}
+@media (max-width:900px){.grid{grid-template-columns:1fr 1fr}}
+@media (max-width:560px){.grid{grid-template-columns:1fr}}
+
+/* samples */
+.inbox{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:30px}
+.inbox figure{margin:0;border:1px solid var(--line);border-radius:16px;overflow:hidden;background:#fff}
+.inbox img{aspect-ratio:3/2;object-fit:cover;width:100%;cursor:zoom-in}
+.inbox figcaption{padding:12px 16px;font-size:14px}
+.inbox figcaption b{display:block;font-size:15px}
+.trades{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin-top:22px}
+.trade{border:1px solid var(--line);border-radius:14px;overflow:hidden;background:#fff;text-decoration:none;color:var(--ink)}
+.trade img{aspect-ratio:4/3;object-fit:cover;object-position:top;width:100%}
+.trade span{display:flex;justify-content:space-between;align-items:center;padding:9px 12px;font-size:13.5px;font-weight:500}
+.trade span i{font-style:normal;color:var(--blue);font-size:12px}
+@media (max-width:900px){.inbox{grid-template-columns:1fr}.trades{grid-template-columns:repeat(3,1fr)}}
+@media (max-width:520px){.trades{grid-template-columns:1fr 1fr}}
+
+/* trust */
+.trust{display:grid;grid-template-columns:1.1fr 1fr;gap:30px;align-items:center;margin-top:30px}
+.trust img{border-radius:16px;border:1px solid var(--line);cursor:zoom-in}
+.tlist{display:grid;gap:14px}
+.tlist>div{display:grid;grid-template-columns:28px 1fr;gap:10px;align-items:start}
+.tlist svg{width:24px;height:24px;stroke:var(--blue);fill:none;stroke-width:2.2;margin-top:2px}
+.tlist b{display:block}
+.tlist span{color:var(--ink2);font-size:14.5px}
+.offices{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+.offices span{border:1px solid var(--line);border-radius:999px;padding:6px 12px;font-size:13.5px}
+@media (max-width:900px){.trust{grid-template-columns:1fr}}
+
+/* terms + cta */
+.terms{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:28px}
+.terms div{background:var(--soft);border-radius:16px;padding:18px}
+.terms b{display:block;font-size:16px}
+.terms span{font-size:14px;color:var(--ink2)}
+@media (max-width:900px){.terms{grid-template-columns:1fr 1fr}}
+.cta{background:var(--ink);color:#fff;border-radius:26px;padding:48px 36px;text-align:center;margin-top:40px}
+.cta h2{color:#fff}
+.cta p{color:#c9d3e3;max-width:56ch;margin:12px auto 24px}
+.cta .ctas{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.cta .btn.ghost{color:#fff;border-color:#fff}
+.cta .btn.ghost:hover{background:rgba(255,255,255,.1)}
+footer{padding:30px 0 40px;font-size:13px;color:var(--ink2)}
+footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+
+/* lightbox */
+.lb{position:fixed;inset:0;z-index:50;background:rgba(10,16,28,.92);display:flex;align-items:center;justify-content:center;padding:24px}
+.lb[hidden]{display:none!important}
+.lb figure{margin:0;max-width:min(1200px,96vw);max-height:92vh;display:flex;flex-direction:column;gap:10px}
+.lb img{max-height:80vh;width:auto;max-width:100%;object-fit:contain;border-radius:10px;margin:0 auto;background:#fff}
+.lb figcaption{color:#fff;text-align:center;font-size:15px}
+.lb figcaption span{display:block;color:#b9c4d6;font-size:13.5px;max-width:80ch;margin:4px auto 0}
+.lb button{position:absolute;top:16px;right:18px;font:600 15px "Poppins",sans-serif;background:#fff;color:var(--ink);border:0;border-radius:999px;padding:8px 16px;cursor:pointer}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a class="brand" href="#top"><img src="img/logo.png" alt="Brixen Consultancy"><span>× IDEC</span></a>
+    <nav>
+      <a class="l" href="#services">Services</a>
+      <a class="l" href="#work">Projects</a>
+      <a class="l" href="#samples">Samples</a>
+      <a class="l" href="#trust">Credentials</a>
+      <a class="btn js-book" href="#book">Book a call</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <p class="kick">Brixen × IDEC · Services and projects</p>
+      <h1>One team for your estimates, engineering and BIM. <em>From Texas to NEOM.</em></h1>
+      <p class="lead">Brixen and IDEC work as one joint venture: a U.S. estimating desk backed by a 120-person architecture, engineering and BIM firm. You send the drawings. We send back the estimate, the coordinated model and the shop drawings, in your templates and under your name.</p>
+      <div class="ctas">
+        <a class="btn js-book" href="#book">Book a 15-minute call</a>
+        <a class="btn ghost" href="#work">See the projects</a>
+      </div>
+      <p class="note">Price and date first. NDA before you share a drawing. No long-term contract.</p>
+    </div>
+    <div class="collage">
+      <figure><img src="img/projects/kafd-hq.jpg" alt="King Abdullah Financial District headquarters, Riyadh"><figcaption>KAFD headquarters, Riyadh</figcaption></figure>
+      <figure><img src="img/projects/kings-mall-tx.jpg" alt="Kings Shopping Mall, Somerville, Texas"><figcaption>Somerville, Texas</figcaption></figure>
+      <figure><img src="img/projects/commercial-complex-tx.jpg" alt="Commercial complex steel model, Texas"><figcaption>Industrial City, Texas</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="proof" aria-label="Track record">
+  <div class="wrap">
+    <div class="stats">
+      <div class="stat"><b>500+</b><span>contractors served by the Brixen estimating desk</span></div>
+      <div class="stat"><b>$2.7B+</b><span>in U.S. construction managed by our leadership</span></div>
+      <div class="stat"><b>$1M+</b><span>saved for contractors in estimating costs</span></div>
+      <div class="stat"><b>150+</b><span>projects delivered by IDEC since 2022</span></div>
+      <div class="stat"><b>120</b><span>people, 45 of them in BIM alone</span></div>
+      <div class="stat"><b>ISO 19650</b><span>certified for BIM, plus ISO quality, environment and safety</span></div>
+    </div>
+    <div class="giga"><strong>Trusted on giga-projects:</strong> NEOM · King Abdullah Financial District · Red Sea Global · Amaala · Qiddiya · Riyadh Metro · Nokia 5G rollout</div>
+  </div>
+</section>
+
+<section aria-labelledby="why">
+  <div class="wrap center">
+    <p class="kick">Why owners work with us</p>
+    <h2 id="why">Grow your output without growing your payroll.</h2>
+    <p class="sub">Every new estimator, drafter or BIM coordinator is a fixed cost before they bring in a dollar. We give you a full team that scales with your workload.</p>
+  </div>
+  <div class="wrap">
+    <div class="outcomes">
+      <div class="oc"><div class="ic"><svg viewBox="0 0 24 24"><path d="M3 17l6-6 4 4 8-8"/><path d="M14 7h7v7"/></svg></div><h3>Bid and build more</h3><p>Take on the jobs you would normally pass on. The extra estimates and drawings land on our desk, not yours.</p></div>
+      <div class="oc"><div class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></div><h3>Faster turnaround</h3><p>A team works your sheets side by side, so work comes back up to 4x faster than one person. Drawing sheets have a 24-hour median turnaround.</p></div>
+      <div class="oc"><div class="ic"><svg viewBox="0 0 24 24"><path d="M12 3l8 4v5c0 5-3.5 8-8 9-4.5-1-8-4-8-9V7z"/><path d="M9 12l2 2 4-4"/></svg></div><h3>Fewer mistakes in the field</h3><p>Every model is clash-checked before anything is cut or poured, and every takeoff and sheet is checked twice.</p></div>
+      <div class="oc"><div class="ic"><svg viewBox="0 0 24 24"><path d="M12 2v20"/><path d="M17 6H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg></div><h3>Up to 70% less</h3><p>A whole team for up to 70% less than one full-time in-house hire. You pay for work, not for empty weeks.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="services" id="services" aria-labelledby="svc-h">
+  <div class="wrap center">
+    <p class="kick">The catalogue</p>
+    <h2 id="svc-h">Everything from the first DWG to the last shop drawing.</h2>
+    <p class="sub">Two desks, one point of contact. Use one service or all of them.</p>
+  </div>
+  <div class="wrap">
+    <div class="desks">
+      <div class="desk">
+        <span class="tag">Estimating desk</span>
+        <h3>Estimates that win bids</h3>
+        <p>For general contractors, subcontractors, builders and developers.</p>
+        <div class="svc">
+          <div><b>Quantity takeoffs, every trade</b><span>Sitework, concrete, masonry, steel, framing, drywall, roofing, finishes, MEP and more.</span></div>
+          <div><b>Full bid estimates</b><span>Material, labor and equipment, priced with your own prices or local-area costs.</span></div>
+          <div><b>Bills of quantities and cost plans</b><span>For developers, owners and tenders, from concept to construction drawings.</span></div>
+          <div><b>Value engineering</b><span>Cheaper ways to build the same thing, before you lock in the price.</span></div>
+          <div><b>Tender support</b><span>Bid documents, scope sheets and bid comparisons.</span></div>
+        </div>
+        <div class="gets"><b>What lands in your inbox</b>Marked-up plans showing everything we counted, an Excel takeoff, and the bid total, ready to send under your name.</div>
+      </div>
+      <div class="desk">
+        <span class="tag">Engineering and BIM desk</span>
+        <h3>Drawings and models that get built right</h3>
+        <p>For contractors, MEP and steel subcontractors, prefab builders, architects and engineers.</p>
+        <div class="svc">
+          <div><b>Architecture and master planning</b><span>Concept, schematic and detailed design, facades, interiors, 3D renders and VR walkthroughs.</span></div>
+          <div><b>Structural design and detailing</b><span>Concrete, steel, timber and light-gauge steel. STAAD, Tekla and FRAMECAD models, CNC-ready files.</span></div>
+          <div><b>MEP, HVAC, fire and plumbing</b><span>Design, calculations, coordination and shop drawings for every building system.</span></div>
+          <div><b>BIM and coordination</b><span>Revit models from LOD 100 to LOD 500, clash detection, 4D scheduling, 5D quantities, scan-to-BIM and as-builts.</span></div>
+          <div><b>Civil and infrastructure</b><span>Grading, drainage, water, sewer, roads and site utilities.</span></div>
+          <div><b>Project support</b><span>Scheduling, value engineering, tender documents and site supervision.</span></div>
+        </div>
+        <div class="gets"><b>What lands in your inbox</b>A coordinated model, construction or shop drawings for every trade, and a parts list, drawn in your templates and issued under your stamp.</div>
+      </div>
+    </div>
+    <div class="who">
+      <span>General contractors</span><span>Subcontractors</span><span>MEP contractors</span><span>Prefab and modular builders</span><span>Steel fabricators</span><span>Architects</span><span>Engineers</span><span>Developers</span>
+    </div>
+  </div>
+</section>
+
+<section aria-labelledby="how">
+  <div class="wrap center">
+    <p class="kick">How it works</p>
+    <h2 id="how">You send the drawings. We do the rest.</h2>
+  </div>
+  <div class="wrap">
+    <div class="steps">
+      <div class="step"><h3>Send your files</h3><p>PDFs, DWGs or a model. We sign an NDA first if you want one.</p></div>
+      <div class="step"><h3>Get the price and date</h3><p>You see what it costs and when it lands before anything starts.</p></div>
+      <div class="step"><h3>We build it</h3><p>Our team takes off, models, coordinates and details the work.</p></div>
+      <div class="step"><h3>Checked twice</h3><p>A second engineer or estimator checks everything before you see it.</p></div>
+      <div class="step"><h3>Delivered your way</h3><p>In your templates, under your name, with free revisions.</p></div>
+    </div>
+    <div class="vids">
+      <div class="vid"><video controls preload="none" poster="video/estimating.jpg" src="video/estimating.mp4"></video><div class="cap">Estimating desk<span>How contractors cut estimating costs and bid more jobs</span></div></div>
+      <div class="vid"><video controls preload="none" poster="video/engineering.jpg" src="video/engineering.mp4"></video><div class="cap">Engineering and BIM desk<span>One hire, or a whole team?</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="work" id="work" aria-labelledby="work-h">
+  <div class="wrap center">
+    <p class="kick">Done projects</p>
+    <h2 id="work-h">Work we have already delivered.</h2>
+    <p class="sub">A selection of IDEC's 150+ projects. Click any project to see the full image.</p>
+    <div class="filters" role="group" aria-label="Filter projects">
+      <button type="button" data-f="all" aria-pressed="true">All</button>
+      <button type="button" data-f="us" aria-pressed="false">United States</button>
+      <button type="button" data-f="com" aria-pressed="false">Commercial and mixed-use</button>
+      <button type="button" data-f="pre" aria-pressed="false">Prefab and modular</button>
+      <button type="button" data-f="inf" aria-pressed="false">Infrastructure and industrial</button>
+    </div>
+  </div>
+  <div class="wrap"><div class="grid" id="grid"></div></div>
+</section>
+
+<section id="samples" aria-labelledby="smp-h">
+  <div class="wrap center">
+    <p class="kick">Estimating samples</p>
+    <h2 id="smp-h">See a real estimate before you send one job.</h2>
+    <p class="sub">These are real estimates from our desk. Open any trade to see the full PDF.</p>
+  </div>
+  <div class="wrap">
+    <div class="inbox">
+      <figure><img src="img/samples/markup-demo.jpg" alt="Marked-up plan sample" data-lb="Marked-up plans|Every item we counted, highlighted on your drawings."><figcaption><b>1. Marked-up plans</b>Every item we counted, shown on your drawings.</figcaption></figure>
+      <figure><img src="img/samples/card-takeoff.jpg" alt="Excel takeoff sample" data-lb="Excel takeoff|Material, quantity, price and labor, line by line."><figcaption><b>2. Excel takeoff</b>Material, quantity, price and labor, line by line.</figcaption></figure>
+      <figure><img src="img/samples/card-summary.jpg" alt="Bid summary sample" data-lb="Bid total|One number, ready to send."><figcaption><b>3. The bid total</b>One number, ready to send under your name.</figcaption></figure>
+    </div>
+    <div class="trades" id="trades"></div>
+  </div>
+</section>
+
+<section id="trust" aria-labelledby="trust-h">
+  <div class="wrap center">
+    <p class="kick">Credentials</p>
+    <h2 id="trust-h">Certified, proven, and close by.</h2>
+  </div>
+  <div class="wrap">
+    <div class="trust">
+      <img src="img/projects/iso-certificates.jpg" alt="IDEC ISO management and BIM certificates" data-lb="IDEC certifications|Quality, environmental, health and safety management, and ISO 19650 BIM certification.">
+      <div>
+        <div class="tlist">
+          <div><svg viewBox="0 0 24 24"><path d="M5 12l4 4 10-10"/></svg><div><b>ISO 19650 certified BIM delivery</b><span>The international standard for managing information in BIM projects, plus ISO quality, environmental and occupational health and safety certificates.</span></div></div>
+          <div><svg viewBox="0 0 24 24"><path d="M5 12l4 4 10-10"/></svg><div><b>U.S. codes, U.S. projects</b><span>Delivered in Texas, Colorado and Kentucky, including cold-formed steel design to IBC 2018 and AISI S100.</span></div></div>
+          <div><svg viewBox="0 0 24 24"><path d="M5 12l4 4 10-10"/></svg><div><b>Your stamp, your control</b><span>Work is drawn in your templates and issued under your own engineer's stamp. We never contact your clients.</span></div></div>
+          <div><svg viewBox="0 0 24 24"><path d="M5 12l4 4 10-10"/></svg><div><b>Confidential by default</b><span>An NDA before you share a single drawing.</span></div></div>
+        </div>
+        <div class="offices"><span>Austin, TX (U.S. head office)</span><span>Cypress, TX</span><span>Toronto</span><span>London</span><span>Riyadh</span><span>Lahore</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="book" aria-labelledby="book-h" style="padding-top:20px">
+  <div class="wrap">
+    <div class="center"><p class="kick">Our terms</p><h2 id="book-h">No risk in finding out.</h2></div>
+    <div class="terms">
+      <div><b>Price and date first</b><span>You know the cost and the delivery day before you say yes.</span></div>
+      <div><b>NDA first</b><span>Your drawings and numbers stay private.</span></div>
+      <div><b>Free revisions</b><span>We fix it until it matches what you need.</span></div>
+      <div><b>No long-term contract</b><span>Use us for one job or every job.</span></div>
+    </div>
+    <div class="cta">
+      <h2>Let's look at your next job together.</h2>
+      <p>Book 15 minutes. Tell us what you are bidding or building, and we will show you exactly how we would handle it, and what it would cost.</p>
+      <div class="ctas">
+        <a class="btn light js-book" href="#book" target="_blank" rel="noopener">Book a 15-minute call</a>
+        <a class="btn ghost js-phone" href="tel:+17379779817">Call +1 (737) 977-9817</a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>Brixen Consultancy LLC · 5900 Balcones Drive, STE 100, Austin, TX 78731 · +1 (737) 977-9817</span>
+    <span>Engineering and BIM delivered with Innovative Design and Engineering Consultancy (IDEC) · idec-int.com</span>
+  </div>
+</footer>
+
+<div class="lb" id="lb" hidden role="dialog" aria-modal="true" aria-label="Image viewer">
+  <button type="button" id="lbx">Close ✕</button>
+  <figure><img id="lbi" alt=""><figcaption id="lbc"></figcaption></figure>
+</div>
+
+<script>
+// Settings: change these two if the booking calendar or phone number changes.
+var BOOKING = "https://api.leadconnectorhq.com/widget/booking/sF8ukLE9qUKFJSMhXwPK";
+var PHONE = "+17379779817";
+
+// Projects: [image, name, place, year, scope, chips, groups, flag]
+var PROJECTS = [
+  ["kings-mall-tx","Kings Shopping Mall","Somerville, Texas, USA","2021","Concept, detailed and infrastructure design through to construction drawings for a strip mall investment.",["Architecture","3D","Working drawings","HVAC","Plumbing"],"us com","USA"],
+  ["commercial-complex-tx","Multipurpose Commercial Complex","Industrial City, Texas, USA","2022","Structural engineering design and shop drawings, with Tekla detailing of the steel frame.",["Structure","Tekla","Shop drawings","HVAC","Electrical"],"us com","USA"],
+  ["edna-hills-tx","Edna Hills Residential Compound","Caldwell, Texas, USA","2022","Master plan, site grading, water and drainage networks, erosion control and construction drawings.",["Master plan","Civil","Grading","Drainage"],"us inf","USA"],
+  ["pleasant-ridge-ky","Pleasant Ridge Retail Building","Kentucky, USA","2021","Cold-formed steel design to IBC 2018 and AISI S100, FRAMECAD model and framing shop drawings.",["Cold-formed steel","FRAMECAD","Shop drawings","BOQ"],"us com pre","USA"],
+  ["shanti-lira-co","Shanti Lira Residential Compound","Colorado, USA","2023","Timber structural model and fabrication drawings for a residential compound.",["BIM LOD 400","Timber","Shop drawings","BOQ"],"us pre","USA"],
+  ["cernuda-co","Cernuda Residence","Colorado, USA","2023","Detailed timber structural and fabrication drawings for a private residence.",["BIM LOD 400","Timber","Shop drawings","BOQ"],"us pre","USA"],
+  ["kafd-hq","King Abdullah Financial District HQ","Riyadh, Saudi Arabia","2024","Detailed engineering design and shop drawings for every discipline of a headquarters building.",["BIM LOD 400/500","Architecture","Structure","MEP","Fire"],"com",""],
+  ["neom-community","NEOM Residential Community at Oxagon","NEOM, Saudi Arabia","2024","BIM models, engineering design and detailing for 38 buildings in a 20,000-person community.",["38 buildings","BIM LOD 350","Structure","Plumbing","Fire","HVAC"],"pre com",""],
+  ["spine-tunnel","Main Spine Tunnel, North and South","Riyadh, Saudi Arabia","Ongoing","BIM for every discipline of a 4.4 km tunnel, with 4D, 5D and 7D simulation and shop drawings.",["4.4 km","BIM LOD 400/500","4D/5D/7D","MEP shop drawings"],"inf",""],
+  ["riyadh-metro","Riyadh Metro Stations","Riyadh, Saudi Arabia","2025","Mechanical and electrical as-built drawings for three metro stations.",["As-builts","HVAC","Fire protection","Plumbing"],"inf",""],
+  ["swro-plant","Seawater Reverse Osmosis Plant","Al Khobar, Saudi Arabia","Completed","Process, mechanical, structural, electrical and civil design for a plant producing 600,000 m³ of fresh water a day.",["Industrial","Process","Structure","Electrical","Civil"],"inf",""],
+  ["corporate-tower","Corporate and Retail Tower","Riyadh, Saudi Arabia","2024","Concept design, facade, architecture, landscape, 3D renders and animation.",["Architecture","Facade","3D","Animation"],"com",""],
+  ["mixed-use-complex","Mixed-Use Development Complex","Riyadh, Saudi Arabia","2024","Architecture and detailed engineering design from concept to interiors.",["Architecture","Facade","Interiors","3D"],"com",""],
+  ["research-center","Knowledge and Research Center","Riyadh, Saudi Arabia","Ongoing","Design development and BIM for every discipline across 20 buildings, master plan and infrastructure.",["20 buildings","BIM LOD 350","Clash detection","BOQs"],"com",""],
+  ["educational-complex","Educational Complex","Al Khobar, Saudi Arabia","Ongoing","Design development and BIM for all disciplines, master plan, landscape and infrastructure.",["BIM LOD 350","Clash detection","Master plan","BOQs"],"com",""],
+  ["auto-showroom","Automobile Showroom","Riyadh, Saudi Arabia","Ongoing","Architecture, structure, MEP and fire design with shop drawings.",["Architecture","Structure","MEP","Shop drawings"],"com",""],
+  ["mic-academy","MIC Village Academy Building","Ras Al Khair, Saudi Arabia","2025","Interior design from schematic to IFC, with finishes, FF&E and BIM coordination.",["Interiors","IFC","FF&E","BIM"],"com",""],
+  ["nbg-village","NBG Workforce Village","Jeddah, Saudi Arabia","2023","Design-and-build package for 150 prefab units, from architecture to shop drawings.",["150 units","BIM LOD 400","STAAD","FRAMECAD","BOQ"],"pre",""],
+  ["terminal-t10","Interim Warehouses, Terminal T10","NEOM Oxagon, Saudi Arabia","2023","Detailed design for every discipline of four prefab office buildings.",["BIM LOD 400","STAAD","FRAMECAD","MEP shop drawings"],"pre inf",""],
+  ["reviva-container","Reviva Container Office Building","Jeddah, Saudi Arabia","2023","Full drawing package for a shipping-container office building.",["Containers","BIM LOD 400","MEP","BOQ"],"pre com",""],
+  ["amaala-staff","Amaala Staff Accommodation","Amaala, Saudi Arabia","2023","Design and build of single and shared prefab accommodation units.",["Prefab","FRAMECAD","MEP","BIM LOD 400"],"pre",""],
+  ["lgs-residential","Triple-Storey Residential Building","Australia","2021","Light-gauge and cold-formed steel structure, optimised for fewer labor hours and lower cost.",["Light-gauge steel","FRAMECAD","Framing plans","BOQ"],"pre",""]
+];
+
+// Estimating samples by trade: [file, label]
+var TRADES = [["commercial-new","Commercial, new build"],["residential-new","Residential, new build"],["earthworks","Earthwork"],["concrete","Concrete"],["masonry","Masonry"],["framing","Framing"],["drywall","Drywall"],["roofing","Roofing"],["electrical","Electrical"],["finishes","Finishes"]];
+
+(function(){
+  var esc=function(s){return String(s).replace(/[&<>"]/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]})};
+  // booking + phone links
+  document.querySelectorAll(".js-book").forEach(function(a){a.href=BOOKING;a.target="_blank";a.rel="noopener"});
+  document.querySelectorAll(".js-phone").forEach(function(a){a.href="tel:"+PHONE});
+
+  // project cards
+  var grid=document.getElementById("grid");
+  grid.innerHTML=PROJECTS.map(function(p){
+    return '<button type="button" class="card" data-g="'+p[6]+'" data-img="img/projects/'+p[0]+'.jpg" data-lb="'+esc(p[1]+' · '+p[2]+'|'+p[4])+'">'+
+      '<div class="ph"><img loading="lazy" src="img/projects/'+p[0]+'.jpg" alt="'+esc(p[1])+'">'+(p[7]?'<span class="flag">'+p[7]+'</span>':'')+'</div>'+
+      '<div class="bd"><h3>'+esc(p[1])+'</h3><span class="loc">'+esc(p[2])+' · '+esc(p[3])+'</span><p class="sc">'+esc(p[4])+'</p>'+
+      '<div class="chips">'+p[5].map(function(c){return '<span>'+esc(c)+'</span>'}).join("")+'</div></div></button>';
+  }).join("");
+
+  // filters
+  var btns=document.querySelectorAll(".filters button");
+  btns.forEach(function(b){b.addEventListener("click",function(){
+    var f=b.dataset.f;
+    btns.forEach(function(x){x.setAttribute("aria-pressed",x===b?"true":"false")});
+    grid.querySelectorAll(".card").forEach(function(c){c.hidden=!(f==="all"||(" "+c.dataset.g+" ").indexOf(" "+f+" ")>-1)});
+  })});
+
+  // trades
+  document.getElementById("trades").innerHTML=TRADES.map(function(t){
+    return '<a class="trade" href="samples/'+t[0]+'.pdf" target="_blank" rel="noopener"><img loading="lazy" src="img/samples/'+t[0]+'.jpg" alt="'+esc(t[1])+' estimate sample"><span>'+esc(t[1])+'<i>PDF ↗</i></span></a>';
+  }).join("");
+
+  // lightbox
+  var lb=document.getElementById("lb"),lbi=document.getElementById("lbi"),lbc=document.getElementById("lbc"),last=null;
+  function open(src,txt,from){var t=(txt||"").split("|");lbi.src=src;lbi.alt=t[0]||"";lbc.innerHTML=esc(t[0]||"")+(t[1]?'<span>'+esc(t[1])+'</span>':'');lb.hidden=false;last=from;document.getElementById("lbx").focus()}
+  function close(){lb.hidden=true;lbi.src="";if(last)last.focus()}
+  document.addEventListener("click",function(e){
+    var c=e.target.closest(".card");if(c){open(c.dataset.img,c.dataset.lb,c);return}
+    var i=e.target.closest("img[data-lb]");if(i){open(i.src,i.dataset.lb,i);return}
+  });
+  document.getElementById("lbx").addEventListener("click",close);
+  lb.addEventListener("click",function(e){if(e.target===lb)close()});
+  document.addEventListener("keydown",function(e){if(e.key==="Escape"&&!lb.hidden)close()});
+})();
+</script>
+</body>
+</html>
